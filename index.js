@@ -1,4 +1,4 @@
 
 function getFirstSelector(selector){
-  return document.querySelector('li');
-  }
+  return document.getElementsByTagName('li');
+}
