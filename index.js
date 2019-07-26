@@ -1,6 +1,5 @@
 
 function getFirstSelector(selector){
-  var main = document.getElementsByTagName('main')[0];
-  var ul = main.children[1];
+  var main = document.document.getElements('main#app ul.unranked-list li')[0];
   return div;
 }
