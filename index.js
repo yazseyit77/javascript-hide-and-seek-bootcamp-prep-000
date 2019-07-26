@@ -1,4 +1,6 @@
 
 function getFirstSelector(selector){
-  return document.getElementsByTagName('main')[0];
+  var main = document.getElementsByTagName('main')[0];
+  var ul = main.children[1];
+  return div;
 }
