@@ -1,5 +1,5 @@
 
 function getFirstSelector(selector){
-  var firstLi = document.querySelector('li');
-  return firstLi;
+  var tag = document.querySelector('li');
+  return tag;
 }
