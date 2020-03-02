@@ -1,22 +1,25 @@
-
-function getFirstSelector(selector){
-  return document.querySelector(selector);
+function getFirstSelector(selector) {
+  return document.querySelector(selector)
 }
 
-function nestedTarget(){
- var main = document.querySelector("#nested .target");
- return main;
+function nestedTarget() {
+  return document.querySelector("#nested .target")
 }
 
-function  deepestChild(){
-  var deep = document.querySelector("#grand-node div div div div");
-  return deep;
-}
-
-function increaseRankBy(n){
-  var n = document.querySelectorAll(".ranked-list");
-  for(var i = 0; i < n.length; i++){
-    n[i].innerHTML = (i + 1).toString();
+function increaseRankBy(n) {
+  let list = document.querySelectorAll(".ranked-list");
+  for (let i = 0; i < list.length; i++) {
+    list[i].innerHTML = parseInt(list[i].innerHTML, 10) + n
   }
-  return n;
+}
+
+function deepestChild() {
+  let list = document.querySelector("div#grand-node")
+  let node = null
+
+  while (list) {
+    node = list
+    list = list.querySelector('*')
+  }
+  return node
 }
